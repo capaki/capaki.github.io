@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+        <link rel="alternate stylesheet" type="text/css" href="large.css" title="large">
+        <script src="scripts/styleswitcher.js"></script>
+		<title>HOW DID I END UP HERE? - home</title>
+	</head>
+	<body> 
+        <header>
+            <h1>HOW DID I END UP HERE?</h1>
+            <p><strong>Now this is the story, all about how, my life got flipped, turned upside down, and I'd like to take a minute, just sit right there, <br> I'll tell you all about how I ended up here.</strong></p>
+            <nav id="visualimpairment">
+                <a id="largetext" href="#" onclick="setActiveStyleSheet('large'); return false;"><span class="icon"></span><b>Large text</b></a>
+                <br>
+                <a id="normaltext" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="icon"></span><b>Normal text</b></a>            </nav>
+            <nav id="navigationmenu">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="archive.html"><b>Archive</b></a></li>
+                    <li><a href="travellog.html"><b>Travel Log</b></a></li>
+                    <li><a href="aboutme.html"><b>About Me</b></a></li>
+                    <li><a href="contact.html"><b>Contact</b></a></li>
+                </ul>            
+            </nav>
+            <br>
+        </header>
+        <main id="travellogcontent">
+            <h2>MY TRAVEL LOG</h2>
+            <hr>
+            <p><strong>This is a log of the places I have travelled to in the past and the places I plan on travelling to in the future. 
+                <br><i>Hopefully I will be able to add the cities in the second table to the first!</i></strong></p>
+            <hr>
+            <aside>
+                <table id="past">
+                    <caption>
+                        <strong>The places I have traveled to</strong>
+                        <details>
+                            <summary>help</summary>
+                            <p>In this table, you will find the following columns: city, country, date of places I've travelled to</p>
+                        </details>
+                    </caption>
+                    <tr><th scope="col">city</th><th scope="col">country</th><th scope="col">date</th></tr>
+                    <tr><td>Istanbul</td><td>Turkey</td><td>born and raised</td></tr>
+                    <tr><td>Melbourne</td><td>Australia</td><td>Nov 2009 - Jul 2010</td></tr>
+                    <tr><td>London</td><td>United Kingdom</td><td>Aug 2018</td></tr>
+                    <tr><td>Los Angeles</td><td>United States</td><td>Aug 2018 - Jun 2019</td></tr>
+                    <tr><td>Washington DC</td><td>United States</td><td>Mar 2019</td></tr>
+                    <tr><td>Budapest</td><td>Hungary</td><td>Sep 2020 - now</td></tr>
+                    <tr><td>Basel</td><td>Switzerland</td><td>Dec 2020</td></tr>
+                    <tr><td>Freiburg</td><td>Germany</td><td>Dec 2020 - Feb 2021</td></tr>
+                </table>
+            </aside>
+            <br>
+            <aside>
+                <table id="future">
+                    <caption>
+                        <strong>The places I plan on travelling to</strong>
+                        <details>
+                            <summary>help</summary>
+                            <p>In this table, you will find the following columns: city, country, date I plan on travelling to</p>
+                        </details>
+                    </caption>
+                    <tr><th scope="col">city</th><th scope="col">country</th><th scope="col">date</th></tr>
+                    <tr><td>Prague</td><td>Czechia</td><td>Jun 2021</td></tr>
+                    <tr><td>Vienna</td><td>Austria</td><td>Jul 2021</td></tr>
+                    <tr><td>Berlin</td><td>Germany</td><td>Jul 2021</td></tr>
+                    <tr><td>Amsterdam</td><td>Netherlands</td><td>Jul 2021</td></tr>
+                    <tr><td>Zadar</td><td>Croatia</td><td>Aug 2021</td></tr>
+                    <tr><td>Rome</td><td>Italy</td><td>tbd</td></tr>
+                    <tr><td>Buenos Aires</td><td>Argentina</td><td>tbd</td></tr>
+                    <tr><td>Machu Picchu</td><td>Peru</td><td>tbd</td></tr>
+                </table>
+            </aside>
+        </main>
+        <footer>
+            <p><i>Created by <b>Candan Pakize Kızılboya (DPIGII)</b> for the Web Development course @ May 2021</i></p>
+            <a href="mailto:dpigii@inf.elte.hu"><img src="media/mail.png" alt="mail"></a>
+            <a href="https://www.youtube.com/channel/UC1kDdVRcX_yBYlY7Ju-ZcwQ" target="_blank"><img src="media/youtube.png" alt="youtube"></a>
+            <a href="https://www.instagram.com/candanpakize/" target="_blank"><img src="media/instagram.png" alt="instagram"></a>
+        </footer>
+    </body>
+</html>

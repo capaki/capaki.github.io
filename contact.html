@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+        <link rel="alternate stylesheet" type="text/css" href="large.css" title="large">
+        <script src="scripts/styleswitcher.js"></script>
+		<title>HOW DID I END UP HERE? - home</title>
+	</head>
+	<body> 
+        <header>
+            <h1>HOW DID I END UP HERE?</h1>
+            <p><strong>Now this is the story, all about how, my life got flipped, turned upside down, and I'd like to take a minute, just sit right there, <br> I'll tell you all about how I ended up here.</strong></p>
+            <nav id="visualimpairment">
+                <a id="largetext" href="#" onclick="setActiveStyleSheet('large'); return false;"><span class="icon"></span><b>Large text</b></a>
+                <br>
+                <a id="normaltext" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="icon"></span><b>Normal text</b></a>
+            </nav>
+            <nav id="navigationmenu">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="archive.html"><b>Archive</b></a></li>
+                    <li><a href="travellog.html"><b>Travel Log</b></a></li>
+                    <li><a href="aboutme.html"><b>About Me</b></a></li>
+                    <li><a href="contact.html"><b>Contact</b></a></li>
+                </ul>            
+            </nav>
+            <br>
+        </header>
+        <main id="contactcontent">
+            <form action="mailto:dpigii@inf.elte.hu" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend><h2 id="reserve">CONTACT ME</h2></legend>
+                    <label for="name"><strong>your name...</strong></label><br>
+                    <input type="text" size="60" name="name" id="name"><br>
+                    <br>
+                    <label for="email"><strong>your email address...</strong></label><br>
+                    <input type="text" size="60" name="email" id="email"><br>
+                    <br>
+                    <label for="message"><strong>your message...</strong></label><br>
+                    <textarea cols="60" rows="10" name="message" id="message"></textarea><br>
+                    <br>
+                    <input type="checkbox" name="human" id="human" value="true">
+                    <label for="human"><strong>I am a human</strong></label><br>
+                    <br>
+                    <input type="radio" name="newsletter" value="yes" id="yes"> <label for="yes"><strong>Subscribe to the newsletter</strong></label><br>
+                    <input type="radio" name="newsletter" value="no" id="no"> <label for="no"><strong>Do not subscribe to the newsletter</strong></label><br>
+                    <br>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p><i>Created by <b>Candan Pakize Kızılboya (DPIGII)</b> for the Web Development course @ May 2021</i></p>
+            <a href="mailto:dpigii@inf.elte.hu"><img src="media/mail.png" alt="mail"></a>
+            <a href="https://www.youtube.com/channel/UC1kDdVRcX_yBYlY7Ju-ZcwQ" target="_blank"><img src="media/youtube.png" alt="youtube"></a>
+            <a href="https://www.instagram.com/candanpakize/" target="_blank"><img src="media/instagram.png" alt="instagram"></a>
+        </footer>
+    </body>
+</html>

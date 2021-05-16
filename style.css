@@ -1,0 +1,289 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #e1eff3;
+    background-image: url(media/airplane.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 8cm;
+}
+
+header, main, footer{
+    width: 70%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px 30px 15px 30px;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+}
+
+article{
+    margin: 0;
+    border-bottom: 1px double darkgray;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+article:last-of-type{border:0}
+
+h1{
+    font-size: 2.1em;
+    text-align: center;
+    text-shadow: 3px 3px 3px #cccccc;
+}
+
+header p{
+    font-size: 1.1em;    
+    text-align: center;
+}
+
+figcaption{
+    font-size: 1.1em;
+}
+
+/* navigation menu */
+
+header nav#navigationmenu{
+    background-color: rgb(80, 135, 207);
+    margin-right: -25px;
+    margin-left: -25px;
+    border-radius: 20px;
+}
+
+a[href="#navigationmenu"] {text-decoration: none;}
+
+header nav ul li{
+    display: inline;
+    white-space: nowrap;
+    opacity: 0.8;
+}
+
+header nav#navigationmenu a{
+    text-decoration: none;
+    font-variant: initial;
+    font-size: 1.6em;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+header nav#navigationmenu a:link{color: white;}
+header nav#navigationmenu a:visited{color: white;}
+header nav#navigationmenu a:hover{text-decoration: underline;}
+
+nav#visualimpairment{
+    position: absolute;
+    width: 210px;
+    left: 15px;
+    top: 5px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+header nav#visualimpairment a{
+    text-decoration: none;
+    font-variant: initial;
+    font-size: 1.4em;
+}
+
+header nav#visualimpairment a:link{color: rgb(0, 0, 185);}
+header nav#visualimpairment a:visited{color: rgb(111, 111, 111);}
+header nav#visualimpairment a:hover{text-decoration: underline;}
+
+#normaltext{display: none;}
+
+footer img{
+    width:50px; 
+    height:50px;
+}
+
+/* main page */
+
+#maincontent p{
+    margin: 0 2em;
+    font-size: 1.1em;
+}
+
+#maincontent img{
+    width: 410px; 
+    height: 295px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* archive page */
+
+#archivecontent figure{
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 1em;
+}
+
+#archivecontent figure img{
+    width: 400px; 
+    height: 600px;
+    border: 1px gray;
+    border-radius: 10px;
+}
+
+#archivecontent figure video{
+    width: 500px; 
+    height: 420px;
+    border: 1px gray;
+    border-radius: 10px;
+}
+
+#archivecontent article p{
+    text-align: justify;
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+#archivecontent article p:first-of-type{margin-top: 50px;}
+
+/* travel log page */
+
+#travellogcontent p{
+    font-size: 1.1em;
+}
+
+#travellogcontent aside table{
+    border-collapse: collapse;
+    border: 3px solid gray;
+    table-layout:initial;
+    width: 430px;
+    margin-bottom: 25px;
+}
+
+#travellogcontent aside table th{background-color: darkseagreen;}
+
+#travellogcontent aside table th, #travellogcontent aside table td{
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+#past{
+    margin: 24px;
+    float: left;
+}
+
+/* about me page */
+
+#aboutmecontent p{
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+#aboutmecontent figure img{
+    border: 1px gray;
+    max-width:850px; 
+    height:450px;
+    margin: auto;
+}
+
+/* contact me page */
+
+fieldset{
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 50px 80px 50px 80px;
+}
+
+fieldset input{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+}
+
+/* breakpoint for print */
+
+@media print {
+	@page{
+		margin: 1cm;
+    }
+	
+	html{
+		background:white;
+	}
+
+	body{
+		width:100%;
+		font-family:'Times New Roman', Times, serif; 
+		background:white;
+		min-width:initial;
+		max-width:initial;
+	}
+
+    header, main, footer{
+        padding: 0px;
+        width: 100%;
+    }
+
+	nav {display: none;}	
+
+	a:after{content: "(" attr(href) ")";}
+    } 
+
+/* breakpoint for mobile */
+
+@media screen and (max-width: 576px){
+    #navigationmenu li{display: block;}
+
+    header, body, main, footer{
+        display: block;
+        margin: auto;
+        column-count: 1;
+    }
+
+    #maincontent figure img{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    aside{
+        column-count: 1;
+    }
+
+    fieldset form{
+        margin: auto;
+    }
+}
+
+/* breakpoint for tablets etc */
+
+@media screen and (min-width: 992px){
+    #navigationmenu li{display: inline;}
+
+    header, body, main, footer{
+        display: block;
+        margin: auto;
+    }
+
+    #maincontent figure img{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    aside{
+        margin: auto;
+    }
+
+    fieldset form{
+        margin: auto;
+    }
+}
+
+

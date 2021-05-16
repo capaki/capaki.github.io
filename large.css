@@ -1,0 +1,59 @@
+@import url('style.css');
+body{
+    font-size: 2em;
+}
+header, main, footer{
+    width: 90%;
+    max-width: 1200px;
+}
+
+nav#navigationmenu{display: block;}
+nav#visualimpairment{width: 400px;}
+a#largetext{display: none;}
+a#normaltext{display: block;}
+
+#maincontent a img{
+    display: block;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+article{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+#archivecontent figure{
+    display: inline;
+    position: relative;
+    float: initial;
+}
+
+#archivecontent figure img{
+    width: 70%;
+    height: 70%;
+}
+
+#archivecontent figure video{
+    width: 90%;
+    height: 90%;
+}
+
+aside{column-count: 1;}
+
+aside table{
+    width: 100%;
+    height: 100%;
+}
+
+#aboutmecontent figure img{
+    width: 100%;
+    height: 100%;
+}
+
+footer img{
+    width: 10%;
+    height: 10%;
+}
